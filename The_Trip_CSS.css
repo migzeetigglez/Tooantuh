@@ -1,38 +1,64 @@
+/*background + page layout*/
+body {
+    background-color: black;
+    background-image: url(http://res.cloudinary.com/tooantuh-hz/image/upload/bo_10px_solid_rgb:ffffff,c_scale,dl_35,e_art:sonnet,h_1000,o_88,q_100/v1525218848/trip.image.sunset.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+/*elements*/
 h1 {
     text-transform: uppercase;
     color: teal;
+    text-align: center;
 }
 h2 {
     text-transform: uppercase;
     font-style: oblique;
     color: olive;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-indent: 15px;
+}
+h3 {
+    color: gray;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: unset;
+    text-align: center;
 }
 p {
-    color: grey
+    color: grey;
 }
 span {
     color: rgb(105, 113, 116);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+/*IDs*/
 #background {
-    background-color: white
+    background-color: white;
+    outline-style: double;
+    position: relative;
+    outline-offset: 1px;
+    outline-width: 3px;
+    padding: 4px 4px 4px 4px;
 }
+/*classes*/
 .dropdown {
     position: relative;
     display: inline-block;
-    background-color: black
 }
 .dropdown-content {
     display:none;
-    position: center;
-    background-color: gray
-    padding: 12px 16px;
+    background-color: black;
+    position: relative;
+    padding: 5px 5px 5px 5px;
     z-index: 999;
     width: 600;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0.2,0.2)    
+    box-shadow: 16px 16px 16px 16px rgba(97, 216, 200, 0.2);
+    outline-style: ridge;
+    outline-color: white;
+    outline-width: 3px;  
 }
 .dropdown:hover .dropdown-content {
     display: block;
-    text-align: center
+    text-align: center;
 }
