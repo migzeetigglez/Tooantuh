@@ -5,8 +5,10 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    margin: 0;
+    padding: 0px;
 }
-/*elements*/
+/*ELEMENTS*/
 h1 {
     text-transform: uppercase;
     color: teal;
@@ -32,6 +34,9 @@ span {
     color: rgb(105, 113, 116);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+span:hover {
+    color: rgb(80, 0, 0);
+}
 /*IDs*/
 #background {
     background-color: white;
@@ -41,7 +46,30 @@ span {
     outline-width: 3px;
     padding: 4px 4px 4px 4px;
 }
-/*classes*/
+/*CLASSES*/
+/*navbar*/
+.nav {
+    font-family: 'Serif', 'Ariel';
+    background-color: #000000;
+    color: #e6e1e185;
+    list-style: none;
+    text-align: center;
+    outline-style: ridge;
+    outline-color: white;
+    padding: 20px 0px 20px 0px;
+}
+.nav > li {
+    display: inline-block;
+    padding-right: 50px;
+}
+.nav > li > a {
+    text-decoration: none;
+    color: white;
+}
+.nav > li > a:hover {
+    color: grey
+}
+/*dropdown content*/
 .dropdown {
     position: relative;
     display: inline-block;
